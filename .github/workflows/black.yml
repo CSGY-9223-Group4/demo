@@ -10,7 +10,7 @@ on:
       - main
       
 permissions:
-  contents: read    # Allows reading repository contents
+  contents: write    # Allows reading repository contents
   statuses: write   # Allows writing commit statuses
   
 jobs:
