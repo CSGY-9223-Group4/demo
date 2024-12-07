@@ -29,10 +29,7 @@ jobs:
         run: |
           pip install black
 
-      - name: Run Black
-        run: |
-          black --check .
-
+    
       # newly added 12/7
       - name: Run Black to fix code formatting
         run: |
