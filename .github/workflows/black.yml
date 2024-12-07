@@ -10,7 +10,7 @@ on:
       - main
       
 permissions:
-  contents: read    # Allows reading repository contents
+  contents: write    # Allows reading repository contents
   statuses: write   # Allows writing commit statuses
   
 jobs:
@@ -29,10 +29,7 @@ jobs:
         run: |
           pip install black
 
-      - name: Run Black
-        run: |
-          black --check .
-
+    
       # newly added 12/7
       - name: Run Black to fix code formatting
         run: |
